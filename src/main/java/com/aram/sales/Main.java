@@ -7,6 +7,7 @@ import com.aram.sales.service.SalesReportService;
 import javax.swing.*;
 
 import static java.awt.EventQueue.invokeLater;
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class Main {
 
@@ -46,6 +47,7 @@ public class Main {
         frame.setSize(1100, 700);
         frame.setTitle("Apple Inc. Live Sales Report");
         frame.setResizable(false);
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
     private static void showWindow(JFrame frame) {
